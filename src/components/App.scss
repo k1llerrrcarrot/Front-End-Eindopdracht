@@ -1,0 +1,186 @@
+$wincBlue: #4A90E1;
+$lightText: white;
+$darkText: #4d4d4d;
+$difficultyBarColor: #d48840;
+$enjoymentBarColor: #3c5b9c;
+
+@mixin dropShadow {
+    -webkit-box-shadow: 0px 7px 14px 0px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0px 7px 14px 0px rgba(0,0,0,0.4);
+	box-shadow: 0px 7px 14px 0px rgba(0,0,0,0.4);
+}
+
+@mixin marginVertAuto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+body {
+	color: $darkText;
+}
+
+header {
+	background-color: $wincBlue;
+	color: $lightText;
+	box-sizing: border-box;
+	overflow: hidden;
+	padding: 15px;
+	margin-bottom: 10px;
+	
+    @include dropShadow;
+}
+
+main {
+	padding: 12px;
+}
+
+
+.list-container {
+	border-radius: 16px;
+	overflow: hidden;
+	
+    @include dropShadow;
+}
+
+.student-list-wrapper {
+    display: flex;
+}
+
+.chart-controls {
+	border-radius: 16px;
+	overflow: hidden;
+	margin: 0;
+	padding: 20px;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 20px;
+	background-color: $wincBlue;
+	color: $lightText;
+
+    @include dropShadow;
+
+	.visibility-controls {
+		display: flex;
+		align-items: center;
+		margin-right: 10%;
+
+		p {
+			padding: 0 5px 0 5px;
+			@include marginVertAuto;
+		}
+
+		label {
+			padding: 0 5px 0 5px;
+			@include marginVertAuto()
+		}
+	}
+}
+
+.tabs {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	cursor: pointer;
+
+	.single-tab {
+		width: 100%;
+	}
+
+	.multi-tab {
+		width: 100%;
+		background-color: $wincBlue;
+		color: $lightText;
+	}
+}
+
+.student-list {
+    ul {
+        margin: 0;
+        padding: 20px;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+	li {
+		text-align: center;
+		width: 250px;
+		height: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		a {
+			color: $darkText;
+			text-decoration: none;
+		}
+	}
+}
+
+.multi-list {
+	background-color: $wincBlue;
+	color: $lightText;
+}
+
+.student-profile {
+	padding: 15px;
+}
+
+.back-button a {
+    color: gray;
+    text-decoration: none;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.profile {
+	margin-top: 20px;
+	display: flex;
+
+	.profile-pic {
+		border-radius: 10px;
+		overflow: hidden;
+	}
+
+	p {
+		margin: 0;
+		padding: 10px;
+	}
+}
+
+.enjoyment {
+	display: inline;
+
+	&::before {
+		content: "";
+		display: inline-block;
+		width: 12px;
+		height: 12px;
+		margin-right: 3px;
+		background-color: $enjoymentBarColor;
+	}
+}
+
+.difficulty {
+	display: inline;
+
+	&::before {
+		content: "";
+		display: inline-block;
+		width: 12px;
+		height: 12px;
+		margin-right: 3px;
+		background-color: $difficultyBarColor;
+	}
+}
+
+.sort-controls {
+	padding: 0 5px 0 5px;
+
+	select {
+		margin-left: 12px;
+	}
+}

@@ -1,0 +1,153 @@
+body {
+  color: #4d4d4d;
+}
+
+header {
+  background-color: #4A90E1;
+  color: white;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0px 7px 14px 0px rgba(0, 0, 0, 0.4);
+}
+
+main {
+  padding: 12px;
+}
+
+.list-container {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 7px 14px 0px rgba(0, 0, 0, 0.4);
+}
+
+.student-list-wrapper {
+  display: flex;
+}
+
+.chart-controls {
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 0;
+  padding: 20px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  background-color: #4A90E1;
+  color: white;
+  box-shadow: 0px 7px 14px 0px rgba(0, 0, 0, 0.4);
+}
+.chart-controls .visibility-controls {
+  display: flex;
+  align-items: center;
+  margin-right: 10%;
+}
+.chart-controls .visibility-controls p {
+  padding: 0 5px 0 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.chart-controls .visibility-controls label {
+  padding: 0 5px 0 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  cursor: pointer;
+}
+.tabs .single-tab {
+  width: 100%;
+}
+.tabs .multi-tab {
+  width: 100%;
+  background-color: #4A90E1;
+  color: white;
+}
+
+.student-list ul {
+  margin: 0;
+  padding: 20px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.student-list li {
+  text-align: center;
+  width: 250px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.student-list li a {
+  color: #4d4d4d;
+  text-decoration: none;
+}
+
+.multi-list {
+  background-color: #4A90E1;
+  color: white;
+}
+
+.student-profile {
+  padding: 15px;
+}
+
+.back-button a {
+  color: gray;
+  text-decoration: none;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.profile {
+  margin-top: 20px;
+  display: flex;
+}
+.profile .profile-pic {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.profile p {
+  margin: 0;
+  padding: 10px;
+}
+
+.enjoyment {
+  display: inline;
+}
+.enjoyment::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 3px;
+  background-color: #3c5b9c;
+}
+
+.difficulty {
+  display: inline;
+}
+.difficulty::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 3px;
+  background-color: #d48840;
+}
+
+.sort-controls {
+  padding: 0 5px 0 5px;
+}
+.sort-controls select {
+  margin-left: 12px;
+}/*# sourceMappingURL=App.css.map */
